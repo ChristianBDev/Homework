@@ -86,3 +86,14 @@ section {
     float: Left;
     width: 33.3333%;
 }
+.israel{
+    float: left;
+    height: 200px;
+    padding: 20px;
+}
+.topnews-bot {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    word-wrap: break-word;
+    width: 100%;
+}
