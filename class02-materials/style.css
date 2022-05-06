@@ -16,12 +16,19 @@ li {
     width: 100%;
     text-align: center;
 }
-.img_size {
+.img1 {
     padding: .5px;
     height: 20px;
     width: 75px;
 }
-body {
+.leftTitle {
+    color: #000000;
+}
+.rightTitle {
+    color: #8c8c8c;
+    text-align: right;
+}
+section {
     margin: 0;
 }
 .image-grid {
