@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .nav {
     min-height: 50px;
     background-color: black;
@@ -31,40 +34,9 @@ li {
 section {
     margin: 0;
 }
-.image-grid {
-    --gap: 16px;
-    --num-cols: 4;
-    --row-height: 300px
-    
-    box-sizing: border-box;
-    padding: var(--gap);
-
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-}
-.image-grid > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.image-grid-col-2 {
-    grid-column: span 2;
-}
-.image-grid-row-2 {
-    grid-column: span 2;
-}
-@media screen and (max-width: 1024px) {
-    .image-grid {
-        --num-cols: 2;
-        --row-height: 200px;
-    }
-}
 .bottom-left {
-    position: fixed;
-    bottom: 12px;
-    left: 20px;
+    position: relative;
+    bottom: 8px;
     word-wrap: break-word;
     color: white;
 }
@@ -75,4 +47,42 @@ section {
 .bar2 {
     font-weight: 900;
     color: blue;
+}
+.news{
+    float: left;
+}  
+.topnews1{
+    float: left;
+    width: 25%;
+    background-image: url(02.jpg);   
+} 
+.topnews2{
+    float: left;
+    width: 15%;
+    margin: 5px;
+    background-image: url(03.jpg);
+} 
+.topnews3{
+    float: left;
+    width: 15%;
+    margin: 5px;
+    background-image: url(04.jpg);  
+} 
+.topnews4{
+    float:left;
+    width: 15%;
+    margin: 5px;
+    background-image: url(05.jpg);
+}
+.bottom1{
+    float: left;
+    Width: 33.3333%
+}
+.bottom2{
+    float: left;
+    width: 33.3333%
+}
+.bottom3{
+    float: Left;
+    width: 33.3333%;
 }
