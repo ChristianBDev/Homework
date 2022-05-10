@@ -33,6 +33,12 @@ nav ul li {
   margin-left: auto;
 }
 
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .news {
   margin-top: 20rem;
 }
@@ -46,12 +52,12 @@ nav ul li {
           justify-content: space-between;
 }
 
-.news .contain .imgs-left {
+.news .contain .cards-left {
   position: relative;
   width: 48%;
 }
 
-.news .contain .imgs-left .imgs-contain {
+.news .contain .cards-left .cards-contain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,30 +67,30 @@ nav ul li {
   height: 100%;
 }
 
-.news .contain .imgs-left .imgs-contain .img {
-  width: 100%;
+.news .contain .cards-left .cards-contain .card {
+  width: 49.5%;
 }
 
-.news .contain .imgs-left .copy {
+.news .contain .cards-left .copy {
   position: absolute;
   bottom: 5rem;
 }
 
-.news .contain .imgs-left .copy h2 {
+.news .contain .cards-left .copy h2 {
   color: white;
   font-size: 5rem;
 }
 
-.news .contain .imgs-left .copy p {
+.news .contain .cards-left .copy p {
   color: white;
   font-size: 3rem;
 }
 
-.news .contain .imgs-right {
+.news .contain .cards-right {
   width: 48%;
 }
 
-.news .contain .imgs-right .imgs-contain {
+.news .contain .cards-right .cards-contain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,17 +101,17 @@ nav ul li {
           justify-content: space-between;
 }
 
-.news .contain .imgs-right .imgs-contain .img {
+.news .contain .cards-right .cards-contain .card {
   position: relative;
   width: 48%;
   margin-bottom: 1rem;
 }
 
-.news .contain .imgs-right .imgs-contain .img:nth-child(3), .news .contain .imgs-right .imgs-contain .img:nth-child(4) {
+.news .contain .cards-right .cards-contain .card:nth-child(3), .news .contain .cards-right .cards-contain .card:nth-child(4) {
   margin-bottom: 0;
 }
 
-.news .contain .imgs-right .imgs-contain .img p {
+.news .contain .cards-right .cards-contain .card p {
   position: relative;
   padding-top: 15rem;
   padding-bottom: 2rem;
@@ -113,12 +119,6 @@ nav ul li {
   padding-right: 5%;
   color: white;
   font-size: 2rem;
-}
-
-.israel {
-  display: inline;
-  height: 200px;
-  padding: 20px;
 }
 
 .fill {
