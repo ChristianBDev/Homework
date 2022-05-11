@@ -1,135 +1,51 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
-nav {
-  background-color: black;
-  width: 100%;
-  height: 100%;
-}
-
-nav ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  padding: 5px;
+h1 {
   margin: 0;
+  font-size: 3.5rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
 }
 
-nav ul li {
-  border-right: 1px solid #bbb;
-  color: white;
-  list-style-type: none;
-  width: 100%;
-  text-align: center;
-  padding: 5px;
+h2 {
+  margin: 0;
+  font-size: 2.7rem;
+  line-height: 1;
+  padding-bottom: 5px;
 }
 
-.left {
-  float: left;
-  padding: 20px;
-}
-
-.right {
-  float: right;
-  padding: 20px;
-}
-
-.img1 {
-  height: 25px;
-  width: 125px;
+p {
+  font-size: 2.2rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
 
-.container {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.news {
-  margin-top: 10rem;
-}
-
-.news .contain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.news .contain .cards-left {
-  position: relative;
-  width: 48%;
-}
-
-.news .contain .cards-left .cards-contain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 48%;
-}
-
-.news .contain .cards-left .cards-contain .card {
-  width: 100%;
-}
-
-.news .contain .cards-left .copy {
-  position: absolute;
-  bottom: 30rem;
-}
-
-.news .contain .cards-left .copy p {
-  color: white;
-}
-
-.news .contain .cards-right {
-  width: 48%;
-}
-
-.news .contain .cards-right .cards-contain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.news .contain .cards-right .cards-contain .card {
-  position: relative;
-  width: 50%;
-  margin-bottom: 1rem;
-}
-
-.news .contain .cards-right .cards-contain .card:nth-child(3), .news .contain .cards-right .cards-contain .card:nth-child(4) {
-  margin-bottom: 0;
-}
-
-.news .contain .cards-right .cards-contain .card p {
-  position: relative;
-  padding-top: 15rem;
-  padding-bottom: 2rem;
-  padding-left: 5%;
-  padding-right: 5%;
-  color: white;
-  font-size: 2rem;
+@media (min-width: 1700px) {
+  .container {
+    max-width: 1850px;
+  }
 }
 
 .fill {
@@ -141,6 +57,8 @@ nav ul li {
 }
 
 .cover {
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,15 +67,259 @@ nav ul li {
   width: 100%;
 }
 
-.bar {
-  padding: 5px;
-  font-size: 20px;
-  font-weight: bolder;
-  color: red;
+.gray {
+  color: gray;
 }
 
-.bar2 {
-  font-weight: 900;
-  color: blue;
+@media (min-width: 1700px) {
+  header {
+    max-width: 1850px;
+  }
+}
+
+header nav {
+  background: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+header nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid #bbb;
+  color: white;
+  list-style-type: none;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+header nav ul li:last-child {
+  border-right: 0;
+}
+
+header nav ul li .img1 {
+  height: 60%;
+  width: 70%;
+}
+
+.welcome {
+  margin-bottom: 1rem;
+  padding-top: 30px;
+}
+
+.welcome .contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 1700px) {
+  .welcome .contain {
+    max-width: 1850px;
+  }
+}
+
+.welcome .contain #h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  line-height: 1;
+  padding-bottom: 10px;
+}
+
+.news {
+  margin-bottom: 5rem;
+}
+
+.news .contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .news .contain {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.news .contain .card-left {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .news .contain .card-left {
+    width: 49.5%;
+  }
+}
+
+.news .contain .card-left .copy {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 80rem;
+  height: 100%;
+  padding: 0 2.5% 2rem 2.5%;
+  color: white;
+}
+
+.news .contain .card-left .copy .heading {
+  padding-bottom: 4rem;
+}
+
+.news .contain .card-left .copy .text {
+  margin-bottom: 3rem;
+  font-size: large;
+}
+
+.news .contain .card-left .copy .text p {
+  bottom: 0;
+  left: 0;
+}
+
+.news .contain .cards-right {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .news .contain .cards-right {
+    width: 49%;
+  }
+}
+
+.news .contain .cards-right .cards-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news .contain .cards-right .cards-contain .card {
+  position: relative;
+  width: 49.5%;
+  margin-bottom: 1rem;
+}
+
+.news .contain .cards-right .cards-contain .card:nth-child(3), .news .contain .cards-right .cards-contain .card:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.news .contain .cards-right .cards-contain .card .copy {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10rem 5% 1rem;
+  color: white;
+}
+
+.news .contain .cards-right .cards-contain .card .copy .heading {
+  margin-bottom: 1rem;
+  max-width: 37.8rem;
+}
+
+.news .contain .cards-right .cards-contain .card .copy p {
+  color: white;
+  font-size: 2rem;
+  bottom: 0;
+  left: 0;
+}
+
+.articles .heading {
+  padding-bottom: 2rem;
+}
+
+.articles .articles-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .articles .articles-contain {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .articles .articles-contain .article {
+    width: 33%;
+  }
+}
+
+.articles .articles-contain .article .copy {
+  padding-top: 2rem;
+}
+
+.articles .articles-contain .article .copy p.red-bar {
+  margin-top: 2rem;
+}
+
+.red-bar {
+  border-left: 4px solid red;
+  padding-left: 5px;
+}
+
+.blue-bar {
+  border-left: 4px solid blue;
+  padding-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */

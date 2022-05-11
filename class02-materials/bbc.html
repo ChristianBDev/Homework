@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7376cbe1c1.js" crossorigin="anonymous"></script>
     <title>BBC - Homework</title>
-</head> 
+</head>
+
 <header>
     <nav>
         <ul>
@@ -26,51 +27,107 @@
         </ul> 
     </nav>
 </header>
-<div>
-    <h4 class="left">Welcome to BBC.com</h4>
-    <h4 class="right" >Thursday, 13 August</h4>
+
+<div class="welcome">
+    <div class="container">
+        <div class="contain">
+            <h1 id="h1">Welcome to BBC.com</h1>
+            <h1 class="gray" id="h1">Thursday, 13 August</h1>
+        </div>
+    </div>
 </div>
 
 <section class="news">
     <div class="container">
         <div class="contain">
-            <div class="cards-left">
-                <div class="cards-contain">
-                    <div class="img">
-                        <img src="img/isandUAE.jpg" class="cover">
-                    </div>
-                    <div class="copy">
+            <div class="card-left">
+                <img src="img/isandUAE.jpg" class="cover fill">
+                <div class="copy">
+                    <div class="heading">
                         <h1>Israel and UAE strike historic peace deal</h1>
-                        <p>Israel and UAE agree to normalise relations, marking the third Israel-Arab peace deal. </p>
-                        <p><span class="bar"> | </span> MIDDLE EAST</p>
                     </div>
+                    <p class="text">Israel and UAE agree to normalise relations, marking the third Israel-Arab peace deal. </p>
+                    <p class="red-bar"> MIDDLE EAST</p>
                 </div>
             </div>
             <div class="cards-right">
                 <div class="cards-contain">
                     <div class="card">
                         <img src="img/AmericanFlag.jpg" class="cover fill">
-                        <h2>Americans, go home: Tension at Canada-US border</h2>
-                        <p>CANADA</p>
+                        <div class="copy">
+                            <div class="heading">
+                                <h2>Americans, go home: Tension at Canada-US border</h2>
+                            </div>
+                            <p class="blue-bar"> CANADA</p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="img/vaccine.jpg" class="cover fill">
-                        <h2>How will the world vaccinate seven billion people?</h2>
-                        <p>Health</p>
+                        <div class="copy">
+                            <div class="heading">
+                                <h2>How will the world vaccinate seven billion people?</h2>
+                            </div>
+                            <p class="red-bar"> Health</p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="img/Gyms.jpeg" class="cover fill">
-                        <h2>The online 'productivity gyms'</h2>
-                        <p>WORKLIFE</p>
+                        <div class="copy">
+                            <div class="heading">
+                                <h2 class="work">The online 'productivity gyms'</h2>
+                            </div>
+                            <p class="blue-bar"> WORKLIFE</p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="img/murdered.webp" class="cover fill">
-                        <h2>The folk singer murdered for his music</h2>
-                        <p>CULTURE</p>
+                        <div class="copy">
+                            <div class="heading">
+                                <h2>The folk singer murdered for his music</h2>
+                            </div>
+                            <p class="blue-bar"> CULTURE</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<section class="articles">
+    <div class="container">
+        <div class="heading">
+            <h1 class="red-bar">NEWS</h1>
+        </div>
+        <div class="articles-contain">
+            <div class="article">
+                <img src="img/Biden.jpg" class="cover">
+                <div class="copy">
+                    <h2 class="heading">Biden and Harris say Trump has left US 'in tatters'</h2>
+                    <p class="gray">Joe Biden and running mate Kamala harris call President Donald Trump a "whining" incompetent leader.</p>
+                    <p class="red-bar gray"> US ELECTION 2020</p>
+                </div>  
+            </div>
+            <div class="article">
+                <img src="img/protests.jpg" class="cover">
+                <div class="copy">
+                    <h2 class="heading">Women form 'solidarity chains' in Belarus protests</h2>
+                    <p class="gray">Women take to the streets of Minsk dressed in white as they demand an end to police brutality.</p>
+                    <p class="red-bar gray"> Europe</p>
+                </div>  
+            </div>
+            <div class="article">
+                <img src="img/Trump.jpg" class="cover">
+                <div class="copy">
+                    <h2 class="heading">Trump says low-pressure shower heads won't wash</h2>
+                    <p class="gray">The US calls for rules to be eased after Donald Trump complained of issues washing his hair.</p>
+                    <p class="red-bar gray" > US & CANADA</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+
+
 </html>
+
