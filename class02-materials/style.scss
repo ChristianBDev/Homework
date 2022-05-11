@@ -166,22 +166,36 @@ header {
             }
             .cards-contain {
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
+                flex-direction: column;
+                @media (min-width: 1024px) {
+                    // width: 49%;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
                 .card {
                     position: relative;
-                    width: 49.5%;
+                    width: 100%;
                     margin-bottom: 1rem;
+                    @media (min-width: 1024px) {
+                        width: 49.5%;
+                    }
                     &:nth-child(3), &:nth-child(4) {
-                        margin-bottom: 0;
+                        margin-bottom: 1rem;
+                        @media (min-width: 1024px) {
+                            margin-bottom: 0;
+                        }
                     }
                     .copy {
                         position: relative;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-end;
-                        padding: 10rem 5% 1rem;
+                        padding: 20rem 5% 1rem;
                         color: white;
+                        @media (min-width: 1024px) {
+                            padding: 10rem 5% 1rem;
+                        }
                         .heading {
                             margin-bottom: 1rem;
                             max-width: 37.8rem;
@@ -214,6 +228,9 @@ header {
             margin-bottom: 5rem;
             @media (min-width: 1024px) {
                 width: 33%;
+            }
+            img {
+                height: 43rem;
             }
             .copy {
                 padding-top: 2rem;

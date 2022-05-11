@@ -232,21 +232,46 @@ header nav ul li .img1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .news .contain .cards-right .cards-contain {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .news .contain .cards-right .cards-contain .card {
   position: relative;
-  width: 49.5%;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
+@media (min-width: 1024px) {
+  .news .contain .cards-right .cards-contain .card {
+    width: 49.5%;
+  }
+}
+
 .news .contain .cards-right .cards-contain .card:nth-child(3), .news .contain .cards-right .cards-contain .card:nth-child(4) {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .news .contain .cards-right .cards-contain .card:nth-child(3), .news .contain .cards-right .cards-contain .card:nth-child(4) {
+    margin-bottom: 0;
+  }
 }
 
 .news .contain .cards-right .cards-contain .card .copy {
@@ -261,8 +286,14 @@ header nav ul li .img1 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 10rem 5% 1rem;
+  padding: 20rem 5% 1rem;
   color: white;
+}
+
+@media (min-width: 1024px) {
+  .news .contain .cards-right .cards-contain .card .copy {
+    padding: 10rem 5% 1rem;
+  }
 }
 
 .news .contain .cards-right .cards-contain .card .copy .heading {
@@ -311,6 +342,10 @@ header nav ul li .img1 {
   .articles .articles-contain .article {
     width: 33%;
   }
+}
+
+.articles .articles-contain .article img {
+  height: 43rem;
 }
 
 .articles .articles-contain .article .copy {
