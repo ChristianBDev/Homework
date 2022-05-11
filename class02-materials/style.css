@@ -71,12 +71,6 @@ p {
   color: gray;
 }
 
-@media (min-width: 1700px) {
-  header {
-    max-width: 1850px;
-  }
-}
-
 header nav {
   background: black;
   -webkit-box-pack: center;
@@ -111,6 +105,8 @@ header nav ul li {
 
 header nav ul li:last-child {
   border-right: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 header nav ul li .img1 {
@@ -174,11 +170,13 @@ header nav ul li .img1 {
 .news .contain .card-left {
   position: relative;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 1024px) {
   .news .contain .card-left {
     width: 49.5%;
+    margin-bottom: 0;
   }
 }
 
@@ -196,16 +194,22 @@ header nav ul li .img1 {
           justify-content: flex-end;
   max-width: 80rem;
   height: 100%;
-  padding: 0 2.5% 2rem 2.5%;
+  padding: 10rem 2.5% 2rem 2.5%;
   color: white;
 }
 
+@media (min-width: 1024px) {
+  .news .contain .card-left .copy {
+    padding: 0 2.5% 2rem 2.5%;
+  }
+}
+
 .news .contain .card-left .copy .heading {
-  padding-bottom: 4rem;
+  padding-bottom: 1.5rem;
 }
 
 .news .contain .card-left .copy .text {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   font-size: large;
 }
 
@@ -299,6 +303,10 @@ header nav ul li .img1 {
   }
 }
 
+.articles .articles-contain .article {
+  margin-bottom: 5rem;
+}
+
 @media (min-width: 1024px) {
   .articles .articles-contain .article {
     width: 33%;
@@ -307,6 +315,13 @@ header nav ul li .img1 {
 
 .articles .articles-contain .article .copy {
   padding-top: 2rem;
+  max-width: 70rem;
+}
+
+@media (min-width: 1024px) {
+  .articles .articles-contain .article .copy {
+    max-width: 50rem;
+  }
 }
 
 .articles .articles-contain .article .copy p.red-bar {

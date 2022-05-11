@@ -67,12 +67,11 @@ p {
 }
 
 header {
-    @media (min-width: 1700px) {
-        max-width: 1850px;
-    }
+    @media (min-width: 1700px) {}
     nav {
         background: black;
         justify-content: center;
+        
         ul {
             display: flex;
             width: 100%;
@@ -88,6 +87,8 @@ header {
                 font-size: 1.5rem;
                 &:last-child {
                     border-right: 0;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
                 }
                 .img1 {
                     height: 60%;
@@ -128,8 +129,10 @@ header {
         .card-left {
             position: relative;
             width: 100%;
+            margin-bottom: 1rem;
             @media (min-width: 1024px) {
                 width: 49.5%;
+                margin-bottom: 0;
             }
             .copy {
                 position: relative;
@@ -138,13 +141,16 @@ header {
                 justify-content: flex-end;
                 max-width: 80rem;
                 height: 100%;
-                padding: 0 2.5% 2rem 2.5%;
+                padding: 10rem 2.5% 2rem 2.5%;
                 color: white;
+                @media (min-width: 1024px) {
+                    padding: 0 2.5% 2rem 2.5%;
+                }
                 .heading {
-                    padding-bottom: 4rem;
+                    padding-bottom: 1.5rem;
                 }
                 .text {
-                    margin-bottom: 3rem;
+                    margin-bottom: 1.5rem;
                     font-size: large;
                     p {
                         bottom: 0;
@@ -205,11 +211,16 @@ header {
             justify-content: space-between;
         }
         .article { // this is the child div
+            margin-bottom: 5rem;
             @media (min-width: 1024px) {
                 width: 33%;
             }
             .copy {
                 padding-top: 2rem;
+                max-width: 70rem;
+                @media (min-width: 1024px) {
+                    max-width: 50rem;;
+                }
                 p {
                     &.red-bar{
                         margin-top: 2rem;
