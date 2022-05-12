@@ -75,10 +75,22 @@ nav {
                 }
             }
         }
+        .gridbox {
+            display: grid;
+            grid-gap: 1rem;
+            padding: 1rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 100px;
+        }
+          
+        .gridbox img {
+            object-fit: contain;
+        }
+
         .cards-right {
-            width: 48%;
+            width: 100%;
             .cards-contain {
-                display: flex;
+                display: grid;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
                 .card {

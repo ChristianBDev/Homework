@@ -97,14 +97,29 @@ nav ul li {
   color: white;
 }
 
+.news .contain .gridbox {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 100px 100px;
+      grid-template-rows: 100px 100px;
+}
+
+.news .contain .gridbox img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .news .contain .cards-right {
-  width: 48%;
+  width: 100%;
 }
 
 .news .contain .cards-right .cards-contain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
